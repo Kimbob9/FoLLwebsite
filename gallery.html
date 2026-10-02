@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo gallery | Friends of Longridge Library</title>
+  <meta name="description" content="Photos from Friends of Longridge Library events.">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bitter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- content.js holds your news, events and photos. It must load BEFORE main.js. -->
+  <script src="js/content.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- The menu is built automatically by js/main.js. The links below only show if JavaScript is switched off. -->
+  <header class="site-header" id="site-header">
+    <noscript>
+      <nav class="container" aria-label="Main">
+        <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="events.html">Events</a> | <a href="gallery.html">Photo gallery</a> | <a href="contact.html">Contact</a>
+      </nav>
+    </noscript>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <div class="container">
+        <h1>Photo gallery</h1>
+        <p>A look back at some of our events. Select a photo to see it larger.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-label="Photos from past events">
+      <div class="container">
+        <!-- PHOTOS ARE NOT EDITED HERE.
+             Upload pictures to the images/gallery folder, then list them in js/content.js (section 5). -->
+        <ul class="gallery-grid" id="gallery-grid"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- The footer is built automatically from js/content.js (email, social links, small print). -->
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

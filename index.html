@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friends of Longridge Library</title>
+  <meta name="description" content="Local volunteers supporting Longridge Library in Lancashire. Find our events, news, photos and how to get involved.">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bitter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- content.js holds your news, events and photos. It must load BEFORE main.js. -->
+  <script src="js/content.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- The menu is built automatically by js/main.js. The links below only show if JavaScript is switched off. -->
+  <header class="site-header" id="site-header">
+    <noscript>
+      <nav class="container" aria-label="Main">
+        <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="events.html">Events</a> | <a href="gallery.html">Photo gallery</a> | <a href="contact.html">Contact</a>
+      </nav>
+    </noscript>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO / WELCOME BANNER =================
+         EDIT: change the heading and the welcome sentence below. -->
+    <section class="hero" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="home-title">Keeping Longridge Library at the heart of the community</h1>
+          <p class="lead">We are local volunteers who raise funds, run events and lend a hand so everyone in Longridge can enjoy their library.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="events.html">See upcoming events</a>
+            <a class="btn btn-ghost" href="contact.html">Get involved</a>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <img src="images/logo.jpg" alt="Friends of Longridge Library logo: a cat wearing glasses reading a book on a stack of books" width="300" height="300">
+        </div>
+      </div>
+      <!-- Decorative row of books (purely for looks, hidden from screen readers). -->
+      <div class="shelf" aria-hidden="true">
+      <span style="--h:70px;--c:var(--plum)"></span>
+      <span style="--h:88px;--c:var(--marigold)"></span>
+      <span style="--h:60px;--c:var(--navy)"></span>
+      <span style="--h:78px;--c:#fff"></span>
+      <span style="--h:92px;--c:var(--marigold)"></span>
+      <span style="--h:66px;--c:var(--plum)"></span>
+      <span style="--h:82px;--c:var(--navy)"></span>
+      <span style="--h:58px;--c:var(--marigold)"></span>
+      <span style="--h:90px;--c:#fff"></span>
+      <span style="--h:72px;--c:var(--plum)"></span>
+      <span style="--h:84px;--c:var(--marigold)"></span>
+      <span style="--h:64px;--c:var(--navy)"></span>
+      <span style="--h:94px;--c:var(--plum)"></span>
+      <span style="--h:76px;--c:#fff"></span>
+      <span style="--h:60px;--c:var(--marigold)"></span>
+      <span style="--h:86px;--c:var(--navy)"></span>
+      <span style="--h:68px;--c:var(--plum)"></span>
+      <span style="--h:80px;--c:var(--marigold)"></span>
+      </div>
+      <div class="shelf-board" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= WELCOME TEXT + NEXT EVENT ================= -->
+    <section class="section" aria-labelledby="welcome-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="welcome-title">Welcome</h2>
+          <!-- EDIT: replace these two paragraphs with your own welcome message. -->
+          <p>Hello, and welcome to the website of the Friends of Longridge Library. We are a friendly group of volunteers who believe a good library makes a town a better place to live.</p>
+          <p>Whether you love a good book sale, want to meet your neighbours over a cup of tea, or have a couple of spare hours to give, there is a place for you with the Friends.</p>
+          <p><a class="more-link" href="about.html">Find out more about us</a></p>
+        </div>
+        <!-- The next upcoming event appears here automatically (from js/content.js). -->
+        <aside aria-labelledby="next-title">
+          <h2 id="next-title">Next event</h2>
+          <div id="next-event"></div>
+          <p><a class="more-link" href="events.html">See all events</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= LATEST NEWS =================
+         The newest 3 stories from js/content.js appear here automatically.
+         To show more or fewer, change data-limit="3". -->
+    <section class="section section-white" aria-labelledby="news-title">
+      <div class="container">
+        <h2 id="news-title">Latest news</h2>
+        <ul class="news-list" id="news-list" data-limit="3"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- The footer is built automatically from js/content.js (email, social links, small print). -->
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>
